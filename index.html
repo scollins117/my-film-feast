@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Feast</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="is-family-monospace">
+
+<!--Header--> 
+<section class="hero is-small has-background-grey-lighter">
+    <div class="hero-body ">
+        <p class="title has-text-white has-text-shadow">It's a Film Feast!</p>
+        <p class="subtitle has-text-white has-text-shadow">Plan a night in with a meal and a movie.</p>
+    </div>
+</section>
+<!--Food Selections Box-->
+<form>
+<div class="tile is-ancestor m-5">
+    <div class="tile is-parent">
+        <div class="tile is-child box">
+            <h1 class="title">Food Selections:</h1>
+            <label for="food" class="label">Ingredients:</label>
+            <input class="input" type="text" id="ingredient1" placeholder="Ingredient 1">
+            <input class="input" type="text" id="ingredient2" placeholder="Ingredient 2">
+            <input class="input" type="text" id="ingredient3" placeholder="Ingredient 3">
+        </div>
+    </div>
+
+<!--Movie Section Box-->
+
+    <div class="tile is-parent">
+        <div class="tile is-child box">
+            <h1 class="title">Movie Selections:</h1>
+            <label class="label">Genres:</label>
+                <div class="select">
+                    <select name="genre" id="genre">
+                        <option value="28">Action</option>
+                        <option value="12">Adventure</option>
+                        <option value="16">Animation</option>
+                        <option value="35">Comedy</option>
+                        <option value="80">Crime</option>
+                        <option value="99">Documentary</option>
+                        <option value="18">Drama</option>
+                        <option value="10751">Family</option>
+                        <option value="14">Fantasy</option>
+                        <option value="36">History</option>
+                        <option value="27">Horror</option>
+                        <option value="10402">Music</option>
+                        <option value="9648">Mystery</option>
+                        <option value="10749">Romance</option>
+                        <option value="878">Science Fiction</option>
+                        <option value="10770">TV Movie</option>
+                        <option value="53">Thriller</option>
+                        <option value="10752">War</option>
+                        <option value="37">Western</option>
+                    </select>
+                </div>
+        
+        <label class="label">Runtime:</label>
+        <div class="select">
+            <select name="runtime" id="runtime">
+                <option value="90">Less Than 1:30hr</option>
+                <option value="120">Less Than 2:00hr</option>
+                <option value="180">Less Than 3:00hr</option>
+                <option value="240">Less Than 4:00hr</option>
+            </select>
+        </div>
+
+        <label class="label">Decades:</label>
+        <div class="select">
+            <select name="decade" id="decade" placeholder="Decade">            
+                <option value="2020">2020 - </option>
+                <option value="2010">2010 - 2019</option>
+                <option value="2000">2000 - 2009</option>
+                <option value="1990">1990 - 1999</option>
+                <option value="1980">1980 - 1989</option>
+                <option value="1970">1970 - 1979</option>
+                <option value="1960">1960 - 1969</option>
+                <option value="1950">1950 - 1959</option>
+                <option value="1940">1940 - 1949</option>
+            </select>
+        </div>
+    </div>
+    </div>
+</div>    
+</div>
+
+<div class="columns is-centered">
+<div class="column is-half-width">
+<button id="submit" class="button is-fullwidth is-success is-rounded has-background-white-ter has-text-black has-text-weight-bold">Generate!</button>
+</div>
+</div>
+</form>
+
+<!--MODAL-->
+<div id="modal" class="modal">
+    <div class="columns">
+        <div class="modal-background"></div>
+            <div class="column">
+                <div class="card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Dinner Suggestion:</p>
+                    </header>
+                        <section class="modal-card-body">
+                            <p class="image">
+                            <h2 id="foodTitle">Broccoli and Beef and Carrots</h2>
+                            <img id="foodPhoto"src="" alt="">
+                            </p>
+                        </section>
+                            <footer class="modal-card-foot">
+                            </footer>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Movie Suggestion:</p>
+                        <button id="close" class="delete" aria-label="close"></button>
+                    </header>
+                        <section class="modal-card-body">
+                        <p class="image">
+                        <h2 id="movieTitle">Some Dumb Movie</h2>
+                        <img id="moviePhoto" src="" alt="">
+                        </p>
+                        </section>
+                            <footer class="modal-card-foot">
+                            </footer>
+                </div>
+            </div>
+    </div>
+</div>
+
+<footer class="footer has-background-grey-lighter">
+    <div class="content has-text-centered ">
+      <p class="has-text-weight-bold has-text-white has-text-shadow">
+        Film Feast by <a href="www.linkedin.com/in/debbie-hall-181143221">Debbie Hall</a>, <a href="www.linkedin.com/in/debbie-hall-181143221">Sean Collins</a>, and <a href="www.linkedin.com/in/debbie-hall-181143221">Tyler Hawkins</a>.
+      </p>
+    </div>
+  </footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
